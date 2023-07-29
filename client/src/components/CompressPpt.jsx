@@ -1,15 +1,15 @@
 import React from "react";
 import logo from "../assets/logo.png";
 
-const JpgToPdf = () => {
+const CompressPpt = () => {
   return (
     <>
       <div>
         <div className="text-center text-red-800 text-4xl italic font-semibold my-4">
-          Jpg To Pdf
+          Compress PPT
         </div>
         <div className="text-center font-medium font-serif text-lg my-4 pb-10">
-          Manage your JPG Images Files better and convert to Pdf
+          Compress Your Ppt for easy Storage
         </div>
       </div>
       <form className="flex justify-center items-center space-x-6">
@@ -24,9 +24,9 @@ const JpgToPdf = () => {
           />
         </label>
       </form>
-      <p className="text-center mt-8">Drop jpg images here</p>
+      <p className="text-center mt-8">Drop Ppt images here</p>
     </>
   );
 };
 
-export default JpgToPdf;
+export default CompressPpt;
