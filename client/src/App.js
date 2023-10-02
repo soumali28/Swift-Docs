@@ -14,13 +14,20 @@ import CompressPdf from "./components/CompressPdf";
 import CompressPpt from "./components/CompressPpt";
 import CompressExcel from "./components/CompressExcel";
 
-
 const App = () => {
+  const [theme, setTheme] = React.useState("retro");
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === "retro" ? "business" : "retro"));
+  };
+  React.useEffect(() => {
+    document.querySelector("html").setAttribute("data-theme", theme);
+  }, [theme]);
+
   return (
     <>
-      <Navbar />
+      <Navbar theme={theme} toggleTheme={toggleTheme} />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home theme={theme}/>} />
         <Route path="/jpg_to_pdf" element={<JpgToPdf />} />
         <Route path="/register" element={<Register />} />
         <Route path="/pdf_to_jpg" element={<PdfToJpg />} />
@@ -35,6 +42,5 @@ const App = () => {
     </>
   );
 };
-
 
 export default App;
