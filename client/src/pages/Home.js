@@ -7,7 +7,7 @@ const Home = (props) => {
     <div className="p-12 flex items-center">
       {/* map the containers */}
       {tools.map((item) => (
-        <div className="p-3 m-4 inline-block shadow-xl rounded-xl w-56 h-56">
+        <div className="p-3 m-4 inline-block shadow-xl rounded-xl w-64 h-64">
           <a href={item.link}>
             {item.icon &&
               React.cloneElement(item.icon, {
