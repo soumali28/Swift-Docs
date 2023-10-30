@@ -14,49 +14,33 @@ const Navbar = (props) => {
             <a href="/">Home </a>
           </li>
           <li className="mx-3">
-            <a href="/">Merge PDF </a>
+            <a href="/pdf/merge">Merge PDF </a>
+          </li>
+          <li className="mx-3">
+            <a href="/pdf/compress"> Compress PDF</a>
           </li>
           <li className="mx-3 dropdown">
             <a href="#" className="">
               {" "}
-              Compress
+              Convert
             </a>
             <ul
-              className={`p-2 shadow menu dropdown-content z-[1] rounded-box w-28`}
+              className={`p-2 shadow menu dropdown-content z-[1] rounded-box w-48`}
             >
               <li>
-                <a>Item 1</a>
+                <a href="/pdf_to_word">PDF to Word</a>
               </li>
               <li>
-                <a>Item 2</a>
+                <a href="/pdf_to_ppt">PDF to PPT</a>
+              </li>
+              <li>
+                <a href="word_to_pdf">Word to PDF</a>
+              </li>
+              <li>
+                <a href="ppt_to_pdf">PPT to PDF</a>
               </li>
             </ul>
           </li>
-          <li className="mx-3">
-            <a href="/"> Convert</a>
-          </li>
-          {/* <details className="dropdown mb-32">
-            <summary className="m-1 btn">Compress</summary>
-            <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Item 2</a>
-              </li>
-            </ul>
-          </details>
-          <details className="dropdown mb-32">
-            <summary className="m-1 btn">Convert</summary>
-            <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Item 2</a>
-              </li>
-            </ul>
-          </details> */}
         </ul>
       </div>
       <div className="flex justify-between items-center">

@@ -14,7 +14,7 @@ function ConvertContainer(props) {
     <div className="text-center">
       <div className="m-12">
         <div className="text-center text-rose-500 text-5xl font-bold my-4">
-          Pdf To PPT
+          Pdf To Word
         </div>
         <div className="text-center text-md my-4 mb-8">
           Manage your PDF Files better and convert to PPT
