@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Register from "./pages/Register";
 import ConvertContainer from "./components/ConvertContainer";
+import Login from "./pages/Login";
 
 const App = () => {
   const [theme, setTheme] = React.useState("retro");
@@ -19,9 +20,10 @@ const App = () => {
     <>
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <Routes>
-        <Route path="/" element={<Home theme={theme}/>} />
+        <Route path="/" element={<Home theme={theme} />} />
         <Route path="/pdf_to_word" element={<ConvertContainer />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </>
   );

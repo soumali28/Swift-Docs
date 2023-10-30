@@ -4,9 +4,7 @@ import { FiSun, FiMoon } from "react-icons/fi";
 
 const Navbar = (props) => {
   return (
-    <div
-      className={"flex justify-between items-center py-3 px-12 shadow-md"}
-    >
+    <div className={"flex justify-between items-center py-3 px-12 shadow-md"}>
       <div className="w-20, h-14">
         <img src={logo} alt="logo" className="w-full h-full rounded-full" />
       </div>
@@ -70,7 +68,9 @@ const Navbar = (props) => {
           {/* moon icon */}
           <FiMoon className="swap-off swap-rotate w-10 h-10 text-slate-600" />
         </label>
-        <button className="btn btn-outline btn-accent mx-3">Sign up</button>
+        <a href="/register">
+          <button className="btn btn-outline btn-accent mx-3">Sign up</button>
+        </a>
       </div>
     </div>
   );
